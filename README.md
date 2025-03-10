@@ -3,10 +3,11 @@ These instructions tell you how to setup a legacy forge environment, this is for
 #### This tutorial uses intellij, if you have a reproducable method for eclipse, submit a pull request
 
 # Setting up the environment
-First install java 8, I reccomend the one from oracle.
+First install java 1.8.0_181, I reccomend the one from oracle. 
 * https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html (Requires an account)
 * https://www.azul.com/downloads/?package=jdk#zulu
 * https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html
+
 
 #### Warning: Hotswapping may be incompatible with other jdk distributions besides oracle's offical one, currently it is the only tested one that works.
 
@@ -23,11 +24,21 @@ https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html
 
 ![image](https://github.com/user-attachments/assets/eb6a13f4-b234-4a92-bfb1-9b0f78555eae)
 
-## Creating a new project folder
-* If you are editing an existing mod, skip this step.
 
-Create a folder with what you want your mod to be called, and unzip the 1.12.2 mdk inside the folder, you can delete the zip file if you want.
+## Creating the project
+Create a new folder named after your project name and keep in mind where you put it.
+Then, Unzip the mdk and copy paste it's contents inside your project folder. Then you may delete the empty mdk folder.
 
+## Editing the gradle version
+This is a very important step, for getting the environment working, go to ```project_folder\gradle\wrapper\``` and find the `gradle_wrapper.properties` file.
 
-
+ensure the contents of the file are the following, this is very important:
+```
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-7.6.1-bin.zip
+networkTimeout=10000
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+```
 
