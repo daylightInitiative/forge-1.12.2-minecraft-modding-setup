@@ -18,27 +18,7 @@ https://www.jetbrains.com/idea/download/other.html
 ![image](https://github.com/user-attachments/assets/a218c37a-c656-4f92-b613-8f7f176012e5)
 
 
-## Minecraft Forge 1.12.2 mdk
-Download the reccomended mdk
-https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html
-
-![image](https://github.com/user-attachments/assets/eb6a13f4-b234-4a92-bfb1-9b0f78555eae)
-
-
-## Creating the project
-Create a new folder named after your project name and keep in mind where you put it.
-Then, Unzip the mdk and copy paste it's contents inside your project folder. Then you may delete the empty mdk folder.
-
-## Editing the gradle version
-This is a very important step, for getting the environment working, go to ```project_folder\gradle\wrapper\``` and find the `gradle_wrapper.properties` file.
-
-ensure the contents of the file are the following, this is very important:
-```
-distributionBase=GRADLE_USER_HOME
-distributionPath=wrapper/dists
-distributionUrl=https\://services.gradle.org/distributions/gradle-7.6.1-bin.zip
-networkTimeout=10000
-zipStoreBase=GRADLE_USER_HOME
-zipStorePath=wrapper/dists
-```
+## Downloading the template empty project
+For fast setup, I have pre-packaged the 1.12.2 mdk and an empty intelliJ project into a zip file.
+Download: https://github.com/daylightInitiative/forge-1.12.2-minecraft-modding-setup/blob/master/Forge1.12_template.zip
 
