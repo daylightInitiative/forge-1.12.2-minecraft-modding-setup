@@ -20,5 +20,18 @@ https://www.jetbrains.com/idea/download/other.html
 
 ## Downloading the template empty project
 For fast setup, I have pre-packaged the 1.12.2 mdk and an empty intelliJ project into a zip file.
-Download: https://github.com/daylightInitiative/forge-1.12.2-minecraft-modding-setup/blob/master/Forge1.12_template.zip
+Download and unzip: https://github.com/daylightInitiative/forge-1.12.2-minecraft-modding-setup/blob/master/Forge1.12_template.zip
+
+Drag the folder outside of the zip file and rename it to your project name, it should look something like this:
+![image](https://github.com/user-attachments/assets/80a4b3cb-00ca-43c5-919e-111e586cc6a9)
+
+In intellij change, File->Project Structure->Project SDK to the java 8 you installed version (1.8.0_181)
+
+Now, Open up the project in IntelliJ and in the terminal run the following commands for setup:
+
+```
+gradlew.bat
+gradlew.bat build
+gradlew.bat genIntellijRuns
+```
 
